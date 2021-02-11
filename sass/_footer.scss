@@ -1,0 +1,62 @@
+$white: #fff;
+$gray: #f2f2f2;
+$negro: #000;
+$letra: rgb(102, 102, 102);
+
+footer{
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    background-color: $gray;
+    position: absolute;
+    bottom: 0px;
+
+    .container{
+        width: 95%;
+        height: 30px;
+        margin: 0 auto;
+        padding-top: 20px;
+        color: $letra;
+
+        &.enlaces{
+            padding-top: 14px;
+
+            .detalles{
+
+                .otros{
+                    float: right;
+
+                    ul li{
+                        float: left;
+                        list-style: none;
+                        margin-right: 15px;
+
+                        a{
+                            color: $letra;
+                            text-decoration: none;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }                
+
+                p{
+                    float: left;
+                    margin-right: 25px;
+    
+                    a{
+                        color: $letra;
+                        text-decoration: none;
+        
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

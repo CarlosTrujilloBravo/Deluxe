@@ -1,3 +1,278 @@
+header {
+  width: 100%;
+  height: auto;
+  background-color: #eee;
+}
+header ul {
+  margin-top: 12px;
+  margin-right: 13px;
+}
+header ul li {
+  list-style: none;
+  float: right;
+}
+header ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  padding-top: 10px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+header ul li a.avatar img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  padding-top: 0px;
+  margin-top: -13px;
+  margin-right: -10px;
+  margin-left: 1px;
+}
+header ul li a.avatar img:hover {
+  border: 4px solid #eee;
+}
+header ul li a.images {
+  padding-right: 9px;
+  padding-left: 7px;
+}
+header ul li a.grid {
+  width: 24px;
+  height: 24px;
+  margin-left: 11px;
+  padding: 7px;
+  padding-top: 6px;
+}
+header ul li a.grid #grid {
+  fill: #707478;
+}
+header ul li a.grid:hover {
+  background-color: #eee;
+  border-radius: 50%;
+}
+header ul li a:hover {
+  text-decoration: underline;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+.wrap {
+  width: 584px;
+  height: 500px;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 28.5%;
+}
+.wrap .logotipo {
+  margin-left: 25%;
+  margin-top: 40px;
+}
+.wrap .barra_busqueda .boton_lupa svg {
+  fill: #7074789f;
+  width: 20px;
+  position: absolute;
+  z-index: 2;
+  margin-top: -35px;
+  margin-left: 17px;
+}
+.wrap .barra_busqueda form {
+  width: 100%;
+  height: 47px;
+  margin-top: 39px;
+}
+.wrap .barra_busqueda form #busqueda {
+  width: 534px;
+  height: 43px;
+  border-radius: 40px;
+  border: 1px solid #b1b1b19f;
+  outline: none;
+  padding-left: 48px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2px;
+  margin-top: -1px;
+}
+.wrap .barra_busqueda form #busqueda:hover {
+  box-shadow: 0px 0px 5px #ccc;
+}
+.wrap .barra_busqueda form input[type=submit] {
+  display: none;
+}
+.wrap .botones {
+  width: 60%;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+.wrap .botones .buscar_con {
+  float: left;
+  margin-left: 10px;
+}
+.wrap .botones .buscar_con:first-child {
+  margin-left: 35px;
+}
+.wrap .botones .buscar_con a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  background-color: #eee;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrap .botones .buscar_con a:hover {
+  box-shadow: 0px 0px 2px #000;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  max-height: 100px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0px;
+}
+footer .container {
+  width: 95%;
+  height: 30px;
+  margin: 0 auto;
+  padding-top: 20px;
+  color: #666666;
+}
+footer .container.enlaces {
+  padding-top: 14px;
+}
+footer .container.enlaces .detalles .otros {
+  float: right;
+}
+footer .container.enlaces .detalles .otros ul li {
+  float: left;
+  list-style: none;
+  margin-right: 15px;
+}
+footer .container.enlaces .detalles .otros ul li a {
+  color: #666666;
+  text-decoration: none;
+}
+footer .container.enlaces .detalles .otros ul li a:hover {
+  text-decoration: underline;
+}
+footer .container.enlaces .detalles p {
+  float: left;
+  margin-right: 25px;
+}
+footer .container.enlaces .detalles p a {
+  color: #666666;
+  text-decoration: none;
+}
+footer .container.enlaces .detalles p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .wrap {
+    margin-left: 26.5%;
+  }
+}
+@media (max-width: 1000px) {
+  .wrap {
+    margin-left: 22.5%;
+  }
+}
+@media (max-width: 900px) {
+  .wrap {
+    margin-left: 18%;
+  }
+}
+@media (max-width: 800px) {
+  .wrap {
+    margin-left: 14%;
+  }
+}
+@media (max-width: 760px) {
+  .wrap {
+    margin-left: 10%;
+  }
+}
+@media (max-width: 720px) {
+  .wrap {
+    margin-left: 6%;
+  }
+}
+@media (max-width: 665px) {
+  .wrap {
+    margin-left: 4%;
+  }
+}
+@media (max-width: 630px) {
+  .wrap {
+    margin-left: 1%;
+  }
+}
+@media (max-width: 600px) {
+  .wrap {
+    margin-left: 0%;
+    width: 100%;
+  }
+  .wrap .logotipo {
+    margin-left: 30%;
+  }
+  .wrap .logotipo img {
+    width: 50%;
+  }
+  .wrap .barra_busqueda .boton_lupa svg {
+    width: 18px;
+    position: absolute;
+    z-index: 2;
+    margin-top: -35px;
+    margin-left: 50px;
+  }
+  .wrap .barra_busqueda form #busqueda {
+    width: 80%;
+    height: 40px;
+    margin-left: 5%;
+    font-size: 14px;
+  }
+  .wrap .botones .buscar_con a {
+    font-size: 12px;
+  }
+
+  footer .container {
+    width: 100%;
+    margin: 0px;
+  }
+  footer .container.enlaces .detalles p {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 470px) {
+  .otros {
+    display: none;
+  }
+
+  .botones {
+    margin: 0;
+  }
+  .botones .buscar_con {
+    float: left;
+    margin-left: 0px;
+  }
+  .botones .buscar_con a {
+    font-size: 10px;
+  }
+
+  .wrap .botones .buscar_con:first-child {
+    margin-left: 0px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

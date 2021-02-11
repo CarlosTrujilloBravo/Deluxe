@@ -1,0 +1,87 @@
+$white: #fff;
+$gray: #eee;
+$negro: #000;
+
+@mixin boxShadow ($size) {
+    box-shadow: 0px 0px $size #ccc;
+}
+
+.wrap{
+    width: 584px;
+    height: 500px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 28.5%;
+
+    .logotipo{
+        margin-left: 25%;
+        margin-top: 40px;
+    }
+
+    .barra_busqueda {
+        .boton_lupa svg{
+            fill: #7074789f;
+            width: 20px;
+            position: absolute;
+            z-index: 2;
+            margin-top: -35px;
+            margin-left: 17px;
+        }
+        form{
+            width: 100%;
+            height: 47px;
+            margin-top: 80px - 26px - 15px;
+
+            #busqueda{
+                width: 584px - 50px;
+                height: 43px;
+                border-radius: 40px;
+                border: 1px solid #b1b1b19f;
+                outline: none;
+                padding-left: 48px;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-left: 2px;
+                margin-top: -1px;
+
+                &:hover{
+                    @include boxShadow(5px);
+                }
+            }
+            input[type="submit"]{
+                display: none;
+            }
+        }
+    }
+
+    .botones{
+        width: 60%;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 28px;
+        
+        .buscar_con{
+            float: left;
+            margin-left: 10px;
+            
+            &:first-child{
+                margin-left: 35px;
+            }
+
+            
+            a{
+                display: block;
+                padding: 10px;
+                color: $negro;
+                text-decoration: none;
+                background-color: $gray;
+                font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+
+                &:hover{
+                    box-shadow: 0px 0px 2px #000;
+                }
+            }
+        }
+    }
+}
